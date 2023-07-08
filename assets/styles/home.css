@@ -1,0 +1,694 @@
+/* CSS Reset
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables 
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar 
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 65%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image 
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+/* Navigation Bar: List Styling 
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.right {
+    position: absolute;
+    right: 34px;
+    top: 3px;
+    display: inline-flex;
+    text-decoration: none;
+    /* border: 2px solid yellow; 
+}
+
+/* Home Section 
+
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:#263238;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services Section 
+#services{
+    margin: 20px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 2px 16px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+/* Ration-Slot 
+#Ration-Slot{
+    margin: 34px;
+}
+#Ration-Slot .box{
+    border: 2px solid brown;
+    padding: 15px;
+    margin: 10px 100px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+
+#Ration-Slot .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* Clients Section
+#client-section{
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes 
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-tertiory{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    padding: 12px;
+    color: rgb(7, 231, 75);
+}
+.h-quartery{
+    font-family: 'Bree Serif', serif;
+    font-size: 2rem;
+    padding: 12px;
+    color: rgb(13, 164, 190);
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+
+.Book-button{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(42, 120, 165);
+    color: white;
+    margin: 10px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor:pointer;
+}
+.center{
+    text-align: center;
+}
+#myInput {
+    width: 60%;
+    font-size: 20px;
+    padding: 12px 20px 12px 40px;
+    border: 2px solid brown;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  #myUL li a {
+       text-decoration: none;
+  }
+
+#Shop-Name a {
+     text-decoration: none;
+}
+.textImage{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-30%,-40%);
+}
+.textImage h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.textImage p{
+    color:whitesmoke;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+*/
+
+    /* CSS Reset */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    /* CSS Variables */
+    :root{
+        --navbar-height: 45px;
+    }
+    
+    /* Navigation Bar */
+    #navbar{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+    }
+    
+    #navbar::before{
+        content: "";
+       background-color: rgb(0, 0, 0);
+        position: absolute;
+        top:0px;
+        left:0px;
+        height: 100%;
+        width:100%;
+        z-index: -1;
+        opacity: 0.9;
+    }
+    
+    /* Navigation Bar: Logo and Image */
+    #logo{
+        margin: 10px 34px;
+    }
+    
+    #logo img{
+        height: 59px;
+        margin: 3px 6px;
+    }
+    
+    
+    /* Navigation Bar: List Styling */
+    
+    #navbar ul{
+        display: flex;
+        color: rgb(0, 0, 0);
+        font-family: 'Baloo Bhai', cursive;
+        position: relative;
+    }
+    
+    #navbar ul li{
+        list-style: none;
+        font-size: 1.3rem;
+    }
+    
+    #navbar ul li a{
+        color: rgb(255, 255, 255);
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+    
+    #navbar ul li a:hover{
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .right {
+        list-style: none;
+        position: absolute;
+        right: 34px;
+        top: 4px;
+        display: inline-flex;
+        text-decoration: none;
+        /* border: 2px solid yellow; */
+    }
+    
+    /* Home Section */
+    #home{
+        display: flex;
+        flex-direction: column;
+        padding:3px 200px;
+        height: 570px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #home::before{
+        content: "";
+        position: absolute;
+        background-image:url(../images/firstimage.jpg) ;
+        height: 620px;
+        top:90px;
+        left:0px;
+        width: 100%;
+        z-index: -1;
+        opacity:0.84;
+    }
+    
+    #home h1{
+        color:rgb(247, 244, 244);
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+    }
+    
+    #home p{
+        color:#ebf6fc;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Bree Serif', serif;
+    }
+    /* Services Section */
+    #services{
+        margin: 20px;
+        display: flex;
+    }
+    #services .box{
+        border: 2px solid rgb(6, 5, 17);
+        padding: 20px;
+        margin: 2px 16px;
+        border-radius: 28px;
+        background: #f2f2f2;
+        margin-bottom: 20px;
+    }
+    
+    #services .box img{
+       height: 80px;
+       margin: auto;
+       display: block;
+    }
+    
+    #services .box p{
+        font-family: 'Bree Serif', serif;
+    
+    }
+    /* Ration-Slot */
+    #Slot{
+        margin: 34px;
+    }
+    #Slot .box{
+        border: 2px solid rgb(8, 5, 8);
+        padding: 15px;
+        margin: 10px 100px;
+        border-radius: 28px;
+        background: #f2f2f2;
+        margin-bottom: 20px;
+    }
+    
+    
+    #Slot .box p{
+        font-family: 'Bree Serif', serif;
+    
+    }
+    #Slot1{
+        margin: 34px;
+    }
+    #Slot1 .box{
+        border: 2px solid rgb(8, 5, 8);
+        padding: 15px;
+        margin: 10px 100px;
+        border-radius: 28px;
+        background: #f2f2f2;
+        margin-bottom: 20px;
+    }
+    
+    
+    #Slot1 .box p{
+        font-family: 'Bree Serif', serif;
+    
+    }
+    
+    /* Clients Section
+    #client-section{
+        position: relative;
+    }
+    
+    #client-section::before{
+     content: "";
+     position: absolute;
+     background: url('../bg.jpg');
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     opacity: 0.3;
+    }
+    
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .client-item{
+        padding: 34px;
+    }
+    
+    #clients img{
+        height: 124px;
+    }
+    
+    */
+    /* Contact Section */
+    #contact{
+        position: relative;
+    }
+    #contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        background: url('../contact.jpg') no-repeat center center/cover;
+    
+    }
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+    #contact-box input,
+    #contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+    }
+    
+    #contact-box form{
+        width: 40%;
+    }
+    
+    #contact-box label{
+       font-size: 1.3rem;
+       font-family: 'Bree Serif', serif;
+    
+    }
+    
+    
+    footer{
+        background: black;
+        color: white;
+        padding: 9px 20px;
+    }
+    
+    /* Utility Classes */
+    .h-primary{
+        font-family: 'Bree Serif', serif;
+        font-size: 3.8rem;
+        padding: 12px;
+    }
+    .h-tertiory{
+        font-family: 'Bree Serif', serif;
+        font-size: 1.5rem;
+        padding: 12px;
+        color: rgb(103, 10, 146);
+    }
+    .h-quartery{
+        font-family: 'Bree Serif', serif;
+        font-size: 2rem;
+        padding: 12px;
+        color: rgb(13, 164, 190);
+    }
+    
+    .h-secondary{
+        font-family: 'Bree Serif', serif;
+        font-size: 2.3rem;
+        padding: 12px;
+        margin-bottom: 50px;
+    }
+    
+    .table td .table td {
+        border-top: none !important;
+    }
+    
+    
+    .Book-button{
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: rgb(42, 120, 165);
+        color: white;
+        margin: 10px;
+        font-size: 1.2rem;
+        border-radius: 30px;
+        cursor:pointer;
+    }
+    
+    .center{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    /*Slide show */
+    * {box-sizing: border-box;}
+            body {font-family: Verdana, sans-serif;}
+            .mySlides {display: none;}
+            img {vertical-align: middle;}
+    
+            /* Slideshow container */
+            .slideshow-container {
+             align-items: center;
+              max-width: 1000%;
+              height: 100%;
+              position: static;
+    
+    
+            }
+    
+    
+    
+            /* Caption text */
+            .text {
+              color: #ffffff;
+              background-color: #0a0404;
+              opacity: 0.6;
+              font-size: 35px;
+              font-family: 'Baloo Bhai', cursive;
+              position: absolute;
+              bottom: 570px;
+              right: 750px;
+              width: 50%;
+              border-radius: 10px;
+              text-align: centre;
+              z-index: 0.1;
+            }
+    
+    
+    
+            .dot {
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.4s ease;
+            }
+    
+            .active {
+              background-color: #717171;
+            }
+    
+            /* Fading animation */
+            .fade {
+              -webkit-animation-name: fade ;
+              -webkit-animation-duration: 1.9s;
+              animation-name: fade;
+              animation-duration: 1.9s;
+            }
+    
+            @-webkit-keyframes fade {
+              from {opacity: .4}
+              to {opacity: 1}
+            }
+    
+            @keyframes fade {
+              from {opacity: .4}
+              to {opacity: 1}
+            }
+    
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+              .text {font-size: 11px}
+            }
+    
+            @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+    
+    .heading{
+        right: 200px;
+    }
+    
+    .cart-page{
+        margin: 80px auto;
+      }
+      table{
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .cart-info{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      th{
+        text-align: left;
+        padding: 5px;
+        color: #fff;
+        background: rgb(0, 0, 0);
+        font-weight: normal;
+      }
+      td{
+        padding: 10px 5px;
+      }
+      td input{
+        width: 40px;
+        height: 30px;
+        padding: 5px;
+    
+      }
+      td a{
+        color:rgb(7, 5, 5);
+        text-decoration: none;
+      }
+      td img{
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+      }
+      .total-price{
+        display: flex;
+        justify-content: flex-end;
+      }
+      .total-price table{
+        border-top: 3px solid rgb(8, 5, 5);
+        width: 100%;
+        max-width: 550px;
+      }
+      td:last-child{
+        text-align: right;
+      }
+      th:last-child{
+        text-align:right;
+      }
+      .box{
+        padding: 10px;
+        margin: 10px 100px;
+        margin-bottom: 20px;
+      }
+      .right {
+    position: absolute;
+    right: 34px;
+    top: 3px;
+    display: inline-flex;
+    text-decoration: none;
+    /* border: 2px solid yellow;
+}

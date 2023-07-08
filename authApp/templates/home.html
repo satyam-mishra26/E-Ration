@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Ration | E-Ration.com</title>
+    <link rel="stylesheet" href="{% static 'home.css'%}">
+   </head>
+
+<body>
+
+        <nav id="navbar">
+            <div id="logo">
+            <img src= "{% static 'images/Group 6.png' %}" alt="E-Ration.com">
+            </div>
+            <ul>
+              <li class="item"><a href="">Home</a></li>
+              <li class="item"><a href="">Services</a></li>
+               <li class="item"><a href="store">Store</a></li>
+              <li class="item"><a href="">Contact Us</a></li>
+            </ul>
+            <div class="right">
+                {% if user_authenticated %}
+                    <li>Hello , {{user.username}}</li>
+                    <li class="item"><a href="{% url 'logout' %}">Logout</a></li>
+                {% else %}  
+                    <li class="item"><a href="{% url 'Registration' %}">Register</a></li>
+                    <li class="item"><a href="{% url 'user-login' %}">Login</a></li>
+                {% endif %}  
+            </div>
+        
+          </nav>
+        
+        
+        
+        
+          <div class="slideshow-container">
+        
+            <div class="mySlides fade">
+                <img src="{% static 'images/Rectangle 121 (1).png' %}" style="width:100% " style="height: 60%">
+                <div class="text">We try to provide helping hand to elderly</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="{% static 'images/Rectangle 65 (1).png' %}" style="width:100%" style="height: 60%">
+                <div class="text"> minimize long queues outside ration shops</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="{%  static 'images/Rectangle 122.png' %}" style="width:100%" style="height: 60%">
+                <div class="text">Making available the stock quantity ,price</div>
+              </div>
+      
+              <div class="mySlides fade">
+                  <img src="{%  static 'images/Rectangle 123.png' %}" style="width:100%" style="height: 60%">
+                  <div class="text">Order online, get Home delivery</div>
+                </div>
+      
+                <div class="mySlides fade">
+                  <img src="{% static 'images/Rectangle 124.png' %}" style="width:100%" style="height: 60%">
+                  <div class="text">Maintain Transaction History</div>
+                </div>
+      
+        
+        
+          </div>
+          <br>
+        
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <script>
+            var slideIndex = 0;
+            showSlides();
+        
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) { slideIndex = 1 }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+          </script>
+        
+               
+           <section id="services-container">
+            <br>
+            <br>
+
+            <h1 class="h-primary" centre>
+              
+              <br>
+             Welcome to E-Ration Shop!
+            </h1>
+            <section id="about">
+             <div class="heading"></div></div>
+            
+             <div class="center">
+               <div id="Ration-Slot">
+                   <div class="box">
+                       
+                     <h2 class="secondary-centre">The website is designed with a purpose of providing an easy purchase of grocery items through online transaction </h2>
+                       <br>
+                       <img src="{% static 'images/e-shop.jpg' %}" alt="" height="200px" width="400px">
+                      <p class="centre">
+                        <br>
+                       <h2 class="secondary-centre">Through the use of the website we can: </h2> 
+                       
+                        <br>
+                        <h2 class="secondary-centre">   > Search and find about the nearest ration shops, information like opening time, closing time </h2>
+                      
+                       <img src="{% static 'images/order.jpg' %}" alt=""  height="200px" width="400px">
+                      <br>
+                      <h2 class="secondary-centre">>Click on the shop to order the grocery items available </h2> 
+                       <img src="{% static 'images/items.jpg' %}" alt="" height="200px" width="400px" >
+                       <br>
+                       <h2 class="secondary-centre">>Order the items and pay through online payment method </h2> 
+                        <img src="{% static 'images/payment.png' %}" alt=""  height="200px" width="400px">
+                       <br>
+                       <h2 class="secondary-centre"> > Home delivery will be done , track your order through the unique tracking number provided </h2> 
+                        <img src="{% static 'images/delivery.jpg' %}" alt=""  height="200px" width="400px">
+                       <br>
+                       <h2 class="secondary-centre">> Check your transaction history </h2> 
+                      
+                        
+                      </p> 
+                     
+           </section>
+           
+          
+           <h1 class="h-primary center">Place Order In 3 Easy Step</h1>
+           <div id="services">
+               <div class="box">
+                   <img src="{% static 'img/1.png' %}" alt="">
+                   
+                   <h2 class="h-secondary center">Step 1</h2>
+                   <img src="{% static 'images/Ellipse 12.png' %}" alt="" height="60px" width="60px">
+                   <p class="center">In order to place orders, first register on our website.Then you'll receive login credentials
+                   </p>
+               </div>
+               <div class="box">
+                   <img src="{% static 'img/2.png' %}" alt="">
+                   <h2 class="h-secondary center">Step 2</h2>
+                   <p class="center"><img src="{% static 'images/search.png' %}" alt=""> search your nearest shop by area or pincode using search bar.
+                       Then you can see the list of grocery items available along with the shop timings of opening and closing</p>
+               </div>
+               <div class="box">
+                   <img src="{ % static 'img/3.png' %}" alt="">
+                   <h2 class="h-secondary center">Step 3</h2>
+                   <p class="center"><img src="{% static 'images/Rectangle 72.png' %}" alt="">  Click on the shop and order the items you want by logging in</p>
+               </div>
+           </div>
+       </section>
+       <br>
+       <br>
+       <br>
+       <br>
+ 
+       <section id="contactus">
+         <div class="heading"><hr></div>
+         <div class="center">
+           <div id="Ration-Slot">
+               <div class="box">
+                   <h2><b> Visit Us:</b></h2>
+                   <img src="{% static 'images/Ellipse 11.png' %}" alt="" height="50px"> 
+                   <p >BNMC 75 NO SCHOOL BHAGYANAGAR,THANE,MAHARASHTRA,421302 </p>  
+               </div>
+               <div class="box">
+                   <h2 class="h-secondary center"><b>Talk to Us:</b>  </h2>
+                   <img src="{% static 'images/image 7.png' %}" alt="" height="70px">
+                   <p class="center">+91 97867 56751
+                    <br>
+                    +91 88763 36892
+                    <br>
+                    022 9897 098097
+                   </p>
+               </div>
+               <div class="box">
+                   <h2 class="h-secondary center">Write to Us:</h2>
+                   <p class="center">
+                       <label for="email"><b>Email</b></label>
+                       <img src="{% static 'images/image 8.png' %}" alt="" height="60px">
+                 <input type="text" placeholder="Enter Email" name="email" id="email" >
+                <br>
+                <br>
+                 <label for="email"><b>Write your message/feedback/complaint</b></label>
+                 <input type="text" placeholder="write your msg" name="email" id="email" >
+   
+   
+                   </p>
+               </div>
+           </div>
+       </div>
+          </section>
+
+          <section id="Shop-Name">
+            <h1 class="h-primary center">Search Your Nearest ration Shop</h1>
+            <h6 class="h-tertiory center">Get a preview list of nearest shop and check availability of ration</h6>
+            <br><br>
+        
+            <div class="center">
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for rationshop..">
+              <ul id="myUL">
+                <div id="Slot1">
+                  <a>
+                    <li>
+                      <div class="box">
+                        <h2>BNMC 75 NO MHARAL BHAGYANAGAR</h2>
+                        <p>BNMC 75 NO MHARAL BHAGYANAGAR,Thane,Maharashtra,421302
+                        </p>
+                        <br>
+                        <h4>Wheat:700kg &nbsp;&nbsp;&nbsp;&nbsp;Rice:500kg</h4>
+                        <a href="{% url 'user-login' %}"> <button class="Book-button">Order Now</button> </a>
+                      </div>
+                    </li>
+                  </a>
+                  <a>
+                    <li>
+                      <div class="box">
+                        <h2>SHIVAJI CHOWK ULHASNAGAR-3</h2>
+                        <p>SHIVAJI CHOWK ULHASNAGAR,Thane,Maharashtra,421303
+                        </p>
+                        <br>
+                        <h4>Wheat:700kg &nbsp;&nbsp;&nbsp;&nbsp;Rice:500kg</h4>
+                        <a href="{% url 'user-login' %}"> <button class="Book-button">Order Now</button> </a>
+                      </div>
+                    </li>
+                  </a>
+                  <a>
+                    <li>
+                      <div class="box">
+                        <h2>BNMC 75 NO SCHOOL VIDHATANAGAR</h2>
+                        <p>BNMC 75 NO SCHOOL VIDHATANAGAR,Thane,Maharashtra,421304
+                        </p>
+                        <br>
+                        <h4>Wheat:700kg &nbsp;&nbsp;&nbsp;&nbsp;Rice:500kg</h4>
+                        <a href="{% url 'user-login' %}"> <button class="Book-button">Order Now</button> </a>
+                      </div>
+                    </li>
+                  </a>
+                </div>
+              </ul>
+            </div>
+        
+          </section>
+        
+          <div>
+            <footer>
+              <div class="center">
+                Copyright &copy; www.E-Ration.com. All rights reserved!
+              </div>
+            </footer>
+          </div>
+        
+        
+</body>
+
+</html>  
+

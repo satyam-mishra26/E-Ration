@@ -1,0 +1,414 @@
+/* CSS Reset */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+  --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+#navbar::before{
+  content: "";
+ background-color: rgb(3, 3, 12);
+  position: absolute;
+  top:0px;
+  left:0px;
+  height: 100%;
+  width:100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+  margin: 10px 34px;
+}
+
+#logo img{
+  height: 59px;
+  margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+  display: flex;
+  color: rgb(26, 19, 11);
+  font-family: 'Baloo Bhai', cursive;
+  position: relative;
+}
+
+#navbar ul li{ 
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a{
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover{
+  color: rgb(255, 253, 253);
+  background-color: rgb(0, 0, 0);
+}
+
+
+.right {
+  list-style: none;
+  position: absolute;
+  right: 34px;
+  top: 4px;
+  display: inline-flex;
+  text-decoration: none;
+  /* border: 2px solid yellow; */
+}
+
+/* Services Section */
+#services{
+  margin: 20px;
+  display: flex;
+}
+#services .box{ 
+  border: 2px solid rgb(3, 3, 10);
+  padding: 20px;
+  margin: 2px 16px;
+  border-radius: 28px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+#services .box img{ 
+ height: 80px;
+ margin: auto;
+ display: block;
+}
+
+#services .box p{
+  font-family: 'Bree Serif', serif;
+
+} 
+/* Ration-Slot */
+#Ration-Slot{
+  margin: 34px;
+}
+#Ration-Slot .box{ 
+  border: 2px solid rgb(0, 0, 0);
+  padding: 15px;
+  margin: 10px 100px;
+  border-radius: 28px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+
+#Ration-Slot .box p{
+  font-family: 'Bree Serif', serif;
+
+} 
+
+/* Clients Section 
+#client-section{ 
+  position: relative;
+}
+
+#client-section::before{
+content: "";
+position: absolute;
+background: url('../bg.jpg');
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.3;
+}
+
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item{
+  padding: 34px;
+}
+
+#clients img{
+  height: 124px;
+}
+
+*/
+/* Contact Section */
+#contact{
+  position: relative;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+} 
+
+#contact-box form{
+  width: 40%;
+}
+
+#contact-box label{
+ font-size: 1.3rem;
+ font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+  font-family: 'Bree Serif', serif;
+  font-size: 3.8rem;
+  padding: 12px;
+}
+.h-tertiory{
+  font-family: 'Bree Serif', serif;
+  font-size: 1.5rem;
+  padding: 12px;
+  color: rgb(103, 10, 146);
+}
+.h-quartery{
+  font-family: 'Bree Serif', serif;
+  font-size: 2rem;
+  padding: 12px;
+  color: rgb(13, 164, 190);
+} 
+
+.h-secondary{
+  font-family: 'Bree Serif', serif;
+  font-size: 2.3rem;
+  padding: 12px;
+  margin-bottom: 50px;
+}
+
+.table td .table td {
+  border-top: none !important;
+}
+
+
+.Book-button{
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: rgb(42, 120, 165);
+  color: white;
+  margin: 10px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor:pointer;
+}
+
+.center{
+  text-align: center;
+  margin-bottom: 40px;
+}
+/*Slide show */
+* {box-sizing: border-box;}
+      body {font-family: Verdana, sans-serif;}
+      .mySlides {display: none;}
+      img {vertical-align: middle;}
+      
+      /* Slideshow container */
+      .slideshow-container {
+       align-items: center;
+        max-width: 1000%;
+        height: 100%;
+        position: static;
+      
+       
+      }
+
+  
+
+/* Add padding to containers */
+.container {
+padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #686467;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+background-color:#686467;
+outline: none;
+}
+input[type=tel], input[type=tel] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #686467;
+}
+
+input[type=tel]:focus, input[type=tel]:focus {
+  background-color:#686467;
+  outline: none;
+}
+
+input[type=image], input[type=image] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #686467;
+}
+
+input[type=image]:focus, input[type=image]:focus {
+  background-color:#686467;
+  outline: none;
+}
+/* Overwrite default styles of hr */
+hr {
+border: 1px solid #686467;
+margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+background-color: rgb(53, 50, 54);
+color: rgb(255, 255, 255);
+padding: 16px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 40%;
+opacity: 0.9;
+border-radius: 20px;
+}
+
+.registerbtn:hover {
+opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+background-color: #f1f1f1;
+text-align: center;
+}
+
+.h-primary{
+  font-family: 'Bree Serif', serif;
+  font-size: 3.8rem;
+  padding: 12px;
+}
+.h-tertiory{
+  font-family: 'Bree Serif', serif;
+  font-size: 1.5rem;
+  padding: 12px;
+  color: rgb(103, 10, 146);
+}
+.h-quartery{
+  font-family: 'Bree Serif', serif;
+  font-size: 2rem;
+  padding: 12px;
+  color: rgb(13, 164, 190);
+} 
+
+.h-secondary{
+  font-family: 'Bree Serif', serif;
+  font-size: 2.3rem;
+  padding: 12px;
+  margin-bottom: 50px;
+}
+
+.table td .table td {
+  border-top: none !important;
+}
+.center{
+  text-align: center;
+}
+
+  
+
+/* Overwrite default styles of hr */
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+background-color: rgb(34, 30, 36);
+color: rgb(255, 255, 255);
+padding: 16px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 40%;
+opacity: 0.9;
+border-radius: 20px;
+}
+
+.registerbtn:hover {
+opacity:1;
+}cd djangocodes
+
+/* Add a blue text color to links */
+a {
+color: rgb(3, 36, 68);
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+background-color: white;
+text-align: center;
+}
+
